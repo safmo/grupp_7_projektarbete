@@ -1,0 +1,30 @@
+@import "./reset.css";
+html {
+  font-size: var(--remSize);
+  color: var(--black);
+}
+body {
+  font-size: var(--fontStd);
+  font-family: var(--fontSans);
+  background-color: var(--white);
+}
+:where(h1) {
+  font-size: 6rem;
+  font-weight: 800;
+}
+:where(h2, h3, h4, h5, h6) {
+  font-weight: 600;
+}
+:where(main) {
+  position: relative;
+}
+a {
+  color: hsl(var(--hue-4), 60%, 40%);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: hsl(var(--hue-3), 60%, 40%);
+}

@@ -1,0 +1,41 @@
+/* Test Colors */
+.bg1 {
+  background-color: aquamarine;
+  border: 1px solid black;
+}
+.bg2 {
+  background-color: lightcyan;
+  border: 1px solid black;
+}
+.bg3 {
+  background-color: lavender;
+  border: 1px solid black;
+}
+.bg4 {
+  background-color: orchid;
+  border: 1px solid black;
+}
+.bg5 {
+  background-color: mediumorchid;
+  border: 1px solid black;
+}
+.bg6 {
+  background-color: moccasin;
+  border: 1px solid black;
+}
+.bg7 {
+  background-color: plum;
+  border: 1px solid black;
+}
+.bg8 {
+  background-color: lightseagreen;
+  border: 1px solid black;
+}
+.bg9 {
+  background-color: paleturquoise;
+  border: 1px solid black;
+}
+.bg10 {
+  background-color: thistle;
+  border: 1px solid black;
+}

@@ -1,0 +1,10 @@
+.main {
+    position: relative;
+}
+.main--margin {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.main > *:not(:last-child) {
+    margin-bottom: 10rem;
+}

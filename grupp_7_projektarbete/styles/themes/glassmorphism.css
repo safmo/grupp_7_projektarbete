@@ -1,0 +1,64 @@
+:root {
+  --g-1: 0.5rem;
+  --g-2: 0.75rem;
+  --g-3: 1rem;
+  --g-4: 1.25rem;
+  --g-5: 1.5rem;
+  --g-6: 1.75rem;
+  --g-7: 2rem;
+}
+
+.glass {
+  position: relative;
+  background-color: hsla(0, 0%, 100%, .2);
+  box-shadow: inset 1px 1px 1px hsla(0, 0%, 100%, .667),
+    inset -1px -1px 1px hsla(var(--hue-1), 40%, 20%, .188),
+    5px 5px 10px hsla(var(--hue-1), 40%, 20%, .188);
+}
+
+.glass--padding-xxs {
+  padding: var(--g-1);
+}
+.glass--padding-xs {
+  padding: var(--g-2);
+}
+.glass--padding-sm {
+  padding: var(--g-3);
+}
+.glass--padding-md {
+  padding: var(--g-4);
+}
+.glass--padding-lg {
+  padding: var(--g-5);
+}
+.glass--padding-xl {
+  padding: var(--g-6);
+}
+.glass--padding-xxl {
+  padding: var(--g-7);
+}
+
+.glass--radius-xxs {
+  border-radius: var(--g-1);
+}
+.glass--radius-xs {
+  border-radius: var(--g-2);
+}
+.glass--radius-sm {
+  border-radius: var(--g-3);
+}
+.glass--radius-md {
+  border-radius: var(--g-4);
+}
+.glass--radius-lg {
+  border-radius: var(--g-5);
+}
+.glass--radius-xl {
+  border-radius: var(--g-6);
+}
+.glass--radius-xxl {
+  border-radius: var(--g-7);
+}
+.glass--radius-full {
+  border-radius: 100vmax;
+}

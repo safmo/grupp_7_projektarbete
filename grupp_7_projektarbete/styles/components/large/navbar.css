@@ -1,0 +1,113 @@
+.nav {
+  position: relative;
+  z-index: 5;
+  padding-right: var(--pageSidePadding);
+  padding-left: var(--pageSidePadding);
+  background-image: linear-gradient(
+    hsla(var(--hue-1), 50%, 15%, 0) .1%,
+    hsla(var(--hue-1), 50%, 15%, .25) 5%,
+    hsla(var(--hue-1), 50%, 15%, .6) 15%,
+    hsla(var(--hue-1), 50%, 15%, .9) 40%,
+    hsla(var(--hue-1), 50%, 15%, 1) 80%
+  );
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__left {
+  padding-bottom: .4em;
+}
+@media only screen and (min-width: 992px) {
+  .nav__left {
+    padding-bottom: 0;
+  }
+}
+
+.nav__right {
+  padding-top: .4em;
+  box-shadow: inset 0 1px hsl(var(--hue-1), 20%, 40%);
+}
+@media only screen and (min-width: 992px) {
+  .nav__right {
+    padding-top: 0;
+    box-shadow: none;
+  }
+}
+
+.nav__home,
+.nav__hamburger,
+.nav__link,
+.nav__home:visited,
+.nav__hamburger:visited,
+.nav__link:visited {
+  padding: 1rem 2rem;
+  color: var(--white);
+}
+@media only screen and (min-width: 480px) {
+  .nav__home,
+  .nav__hamburger,
+  .nav__link {
+    padding: 1rem 2rem;
+    font-size: .9em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .nav__home,
+  .nav__hamburger,
+  .nav__link {
+    font-size: .8em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .nav__hamburger {
+    display: none;
+  }
+  .nav__home,
+  .nav__hamburger,
+  .nav__link {
+    position: relative;
+    font-size: .75em;
+  }
+  .nav__link::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0, 1);
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: hsl(var(--hue-3), 60%, 60%);
+    content: "";
+    transition: transform 300ms ease-in-out;
+  }
+}
+
+.nav__home:hover,
+.nav__hamburger:hover,
+.nav__link:hover {
+  text-decoration: none;
+}
+@media only screen and (min-width: 992px) {
+  .nav__link:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+.nav__home--danger span {
+  color: hsl(var(--hue-3), 60%, 60%);
+}
+.nav__menu .nav__link--current {
+  color: hsl(var(--hue-3), 60%, 60%);
+}
+
+@media only screen and (min-width: 992px) {
+  .nav__home--current,
+  .nav__menu .nav__link--current {
+    box-shadow: inset 0 -4px hsl(var(--hue-3), 60%, 60%);
+    color: var(--white);
+  }
+}

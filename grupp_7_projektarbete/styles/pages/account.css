@@ -1,0 +1,95 @@
+:root {
+  --acc-info-mt: 4rem;
+  --acc-grad-deg: 160deg;
+  --acc-grad-p-1: 28%;
+  --acc-grad-p-2: calc(var(--acc-grad-p-1) + .1%);
+}
+@media only screen and (min-width: 380px) {
+  :root {
+    --acc-grad-deg: 150deg;
+    --acc-grad-p-1: 30%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  :root {
+    --acc-grad-deg: 160deg;
+    --acc-grad-p-1: 35%;
+  }
+}
+@media only screen and (min-width: 580px) {
+  :root {
+    --acc-grad-p-1: 40%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  :root {
+    --acc-grad-deg: 163deg;
+    --acc-grad-p-1: 42%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  :root {
+    --acc-info-mt: 12rem;
+    --acc-grad-deg: 164deg;
+    --acc-grad-p-1: 43%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  :root {
+    --acc-grad-p-1: 44%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  :root {
+    --acc-grad-deg: 165deg;
+    --acc-grad-p-1: 45%;
+  }
+}
+
+.account-bg {
+  position: relative;
+  background: linear-gradient(
+    var(--acc-grad-deg),
+    hsla(var(--hue-3), 40%, 75%, 0) var(--acc-grad-p-1),
+    var(--white) var(--acc-grad-p-2)
+    ),
+    linear-gradient(
+      hsla(var(--hue-1), 50%, 15%, 1) 2%,
+      hsla(var(--hue-1), 50%, 15%, 0) 30%
+    ),
+    linear-gradient(
+      0deg,
+      var(--white),
+      hsla(var(--hue-3), 70%, 75%, 1),
+      hsla(var(--hue-3), 70%, 75%, 0) 70%
+    ),
+    linear-gradient(
+      45deg,
+      var(--white),
+      hsla(var(--hue-3), 40%, 60%, 1),
+      hsla(var(--hue-3), 40%, 60%, 0) 70%
+    ),
+    linear-gradient(
+      90deg,
+      var(--white),
+      hsla(var(--hue-3), 40%, 60%, 1),
+      hsla(var(--hue-3), 40%, 60%, 0) 70%
+    ),
+    linear-gradient(
+      135deg,
+      var(--white),
+      hsla(var(--hue-3), 60%, 90%, 1),
+      hsla(var(--hue-3), 60%, 90%, 0) 70%
+    ),
+    linear-gradient(
+      180deg,
+      var(--white),
+      hsla(var(--hue-5), 40%, 60%, 1),
+      hsla(var(--hue-5), 40%, 60%, 0) 70%
+    );
+  transition: all 300ms ease-in-out;
+}
+
+.account-info {
+  margin-top: var(--acc-info-mt);
+}

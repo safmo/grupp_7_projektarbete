@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VAST - Sign Up</title>
+  <meta name="description"
+    content="This text will quite often be displayed beneath the page name in the search results" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="stylesheet" href="./styles/variables/variables.css" />
+  <link rel="stylesheet" href="./styles/base/base.css" />
+  <link rel="stylesheet" href="./styles/components/large/container.css" />
+  <link rel="stylesheet" href="./styles/components/large/navbar.css" />
+  <link rel="stylesheet" href="./styles/components/large/modal.css" />
+  <link rel="stylesheet" href="./styles/components/large/form.css" />
+  <link rel="stylesheet" href="./styles/components/small/headline.css" />
+  <link rel="stylesheet" href="./styles/components/small/button.css" />
+  <link rel="stylesheet" href="./styles/components/small/social-media.css" />
+  <link rel="stylesheet" href="./styles/grid/grid.css" />
+  <link rel="stylesheet" href="./styles/layout/layout.css" />
+  <link rel="stylesheet" href="./styles/pages/sign-up.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__heading page-header__heading--danger">V<span>A</span>ST</h1>
+    <nav class="nav flex frow fbetween fmiddle">
+      <a class="nav__home nav__link nav__home--danger" href="./home.html">V<span>A</span>ST</a>
+      <a class="nav__hamburger" href="#">&#9776;</a>
+      <div class="nav__menu fcol-12 fcol-md-auto fgrow flex fcol frow-md fbetween-md">
+        <div class="nav__left flex fcol fcenter frow-md">
+          <a class="nav__link" href="./members.html">Members</a>
+        </div>
+        <div class="nav__right flex fcol fcenter frow-md">
+          <a class="nav__link" href="./account.html">Account</a>
+          <a class="nav__link nav__link--current" href="./sign_up.html">Sign up</a>
+          <a class="nav__link login" href="#">Log in</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main main--margin">
+    <section class="container flex frow fcenter">
+      <form class="sign-up-form form fcol-12 fcol-xs-11 fcol-sm-9 fcol-lg-8 fcol-xl-6" method="POST" action="#">
+        <header class="form__header flex fbetween fbase">
+          <h2 class="headline headline--danger">Sign <span>up</span></h2>
+          <p class="form__info">Required fields are followed by
+            <strong><abbr class="form__text-required" title="required" aria-label="required"><sup>*</sup></abbr></strong>
+          </p>
+        </header>
+        <ul>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="forname">
+                <span>First Name</span>
+                <strong><abbr class="form__text-required" title="required" aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="forname" name="firstName" type="text" required placeholder="Jussi"
+                value="" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="surname">
+                <span>Last Name</span>
+                <strong><abbr class="form__text-required" title="required" aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="surname" name="lastName" type="text" required placeholder="Björling"
+                value="" />
+            </div>
+          </li>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="regMail">
+                <span>Email</span>
+                <strong><abbr class="form__text-required" title="required" aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="regMail" name="userMail" type="email" required
+                placeholder="address@mail.com" value="" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="cRegMail">
+                <span>Confirm Email</span>
+                <strong><abbr class="form__text-required" title="required" aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="cRegMail" name="cUserMail" type="email" required value="" />
+            </div>
+          </li>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="regPwd">
+                <span>Password</span>
+                <strong><abbr class="form__text-required" title="required" aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="regPwd" name="password" type="password" required placeholder="****"
+                value="" />
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="cRegPwd">
+                <span>Confirm Password</span>
+                <strong><abbr class="form__text-required" title="required" aria-label="required"><sup>*</sup></abbr></strong>
+              </label>
+              <input class="form__input" id="cRegPwd" name="cPassword" type="password" required value="" />
+            </div>
+          </li>
+          <li class="form__group">
+            <div class="form__field">
+              <label class="form__label" for="member">
+                <span>Role</span>
+              </label>
+              <div class="form__select-container">
+                <select class="form__select" id="member" name="memberType">
+                  <option value="Guest">Guest</option>
+                  <option value="Teacher">Teacher</option>
+                  <option value="Student">Student</option>
+                  <option value="Manager">Manager</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="form__btns flex fend">
+          <button class="btn btn--danger" type="reset">Clear</button>
+          <button class="btn btn--success" type="submit">Register</button>
+        </div>
+        <div class="form__group flex fend">
+          <small>Already have an account?
+            <a href="#" title="Go to log in page">Log in</a>
+          </small>
+        </div>
+      </form>
+    </section>
+  </main>
+  <!--   <script src="./js/headerBG.js"></script> -->
+  <script src="./js/footer.js"></script>
+  <script src="./js/formSelect.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

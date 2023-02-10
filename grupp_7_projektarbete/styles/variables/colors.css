@@ -1,0 +1,22 @@
+:root {
+  --base-hue-1: 208; /* Blue */
+  --base-hue-2: 177; /* Turquoise */
+  --base-hue-3: 328; /* Red */
+  --base-hue-4: 105; /* Green */
+  --base-hue-5: 24;  /* Orange */
+  --base-black: calc(var(--base-hue-1) + 22);
+
+  --shift: 0;
+
+  --hue-1: calc(var(--base-hue-1) + var(--shift));
+  --hue-2: calc(var(--base-hue-2) + var(--shift));
+  --hue-3: calc(var(--base-hue-3) + var(--shift));
+  --hue-4: calc(var(--base-hue-4) + var(--shift));
+  --hue-5: calc(var(--base-hue-5) + var(--shift));
+
+  --white-hue: var(--hue-1);
+  --white: hsl(var(--white-hue), 100%, 96%);
+
+  --black-hue: var(--base-black);
+  --black: hsl(var(--base-hue), 8%, 14%);
+}

@@ -1,0 +1,41 @@
+.progress {
+  font-size: 1.6rem;
+  color: var(--hue-1);
+}
+.progress__item {
+  margin-bottom: 1em;
+}
+.progress__text {
+  position: relative;
+  margin-bottom: .2em;
+  font-size: 1em;
+}
+.progress__text:after {
+  position: absolute;
+  right: 0;
+  content: attr(data-value) "%";
+}
+.progress__wrapper {
+  height: 1.5em;
+  border-radius: 1.5em;
+  background-color: var(--white);
+  background-image: linear-gradient(
+    hsla(var(--hue-1), 30%, 60%, .5),
+    hsla(var(--hue-1), 40%, 75%, .5),
+    hsla(var(--hue-1), 50%, 90%, .5)
+  );
+  box-shadow: inset 1px 1px 5px hsla(var(--hue-1), 20%, 20%, .467);
+}
+.progress__bar {
+  height: 100%;
+  background-color: hsl(var(--black-hue), 8%, 17%);
+  background-image: linear-gradient(
+    hsl(var(--black-hue), 4%, 50%),
+    hsl(var(--black-hue), 6%, 30%),
+    hsl(var(--black-hue), 8%, 17%)
+  );
+  box-shadow: inset 1px 1px 3px hsla(var(--white-hue), 0%, 100%, .8),
+    inset -1px -1px 3px hsla(var(--hue-1), 10%, 20%, .2),
+    2px 2px 5px hsla(var(--hue-1), 10%, 20%, .2);
+  border-radius: 1rem;
+}

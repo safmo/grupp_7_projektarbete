@@ -1,0 +1,31 @@
+.grid-one {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.grid-one__item {
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-one__item {
+    flex-basis: 75%;
+  }
+  .grid-one__item:nth-child(even) {
+    margin-left: 15rem;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .grid-one {
+    gap: 1rem;
+  }
+  .grid-one__item {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  .grid-one__item:nth-child(even) {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.btn {
+  display: block;
+  padding: .5em 1em;
+  background-color: hsl(var(--hue-1), 30%, 40%);
+  font-size: .9em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  border-radius: .5em;
+  transition: all 300ms ease-in-out;
+}
+.btn:hover {
+  text-decoration: none;
+}
+.btn--dark-color {
+  color: hsl(var(--hue-1), 50%, 40%);
+}
+.btn--dark-color:hover {
+  color: hsl(var(--hue-1), 50%, 20%);
+}
+.btn--success:hover {
+  background-color: hsl(var(--hue-4), 40%, 60%);
+}
+.btn--success:active {
+  background-color: hsl(var(--hue-4), 60%, 60%);
+}
+.btn--danger:hover {
+  background-color: hsl(var(--hue-3), 40%, 60%);
+}
+.btn--danger:active {
+  background-color: hsl(var(--hue-3), 60%, 60%);
+}
+.btn--circle {
+  height: 6rem;
+  width: 6rem;
+  padding: 1.2rem;
+  font-size: 3.5rem;
+  line-height: 1;
+  border-radius: 100vmax;
+}

@@ -1,0 +1,48 @@
+:root {
+  --img-padding: 1.5rem;
+}
+.image {
+  position: relative;
+}
+.image--rotate {
+  transform: rotate(0deg);
+}
+.image--rotate:hover {
+  transform: rotate(360deg);
+}
+.image__img,
+.image__picture {
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  transition: all 500ms ease-in-out;
+}
+.image--color .image__img,
+.image--color .image__picture {
+  position: relative;
+}
+.image--color .image__img::after,
+.image--color .image__picture::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(var(--hue-1), 20%, 40%);
+  mix-blend-mode: color;
+  opacity: .35;
+  content: "";
+}
+.image--circle,
+.image--circle .image__img,
+.image--circle .image__picture,
+.image--circle .image__img::after,
+.image--circle .image__picture::after {
+  border-radius: 100vmax;
+}
+.image--rotate .image__img:hover,
+.image--rotate .image__picture:hover {
+  transform: rotate(360deg);
+}

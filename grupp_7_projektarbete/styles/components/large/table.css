@@ -1,0 +1,115 @@
+:root {
+  --t-lg-radius: 1rem;
+  --t-sm-radius: .5rem;
+}
+
+.table {
+  font-size: 1.4rem;
+  text-align: left;
+  border-radius: var(--t-lg-radius);
+  border-spacing: 1px;
+}
+
+.table thead {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .table thead {
+    display: table-header-group;
+    border: none;
+    font-size: 1.2em;
+    color: hsl(var(--hue-3), 50%, 40%);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+}
+
+.table th {
+  padding: .85em;
+}
+.table td {
+  padding: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .table th {
+    position: relative;
+    top: 5px;
+  }
+  .table th,
+  .table td {
+    white-space: nowrap;
+  }
+}
+
+.table--radius tr:first-child td:first-child {
+  border-top-left-radius: var(--t-sm-radius);
+}
+.table--radius tr:first-child td:last-child {
+  border-top-right-radius: var(--t-sm-radius);
+}
+.table--radius tr:last-child td:first-child {
+  border-bottom-left-radius: var(--t-sm-radius);
+}
+.table--radius tr:last-child td:last-child {
+  border-bottom-right-radius: var(--t-sm-radius);
+}
+.table--hover tbody tr:hover {
+  background-color: hsla(var(--white-hue), 0%, 100%, .9) !important;
+}
+.table tr > *:not(:nth-child(2)) {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .table tr > *:not(:nth-child(0)) {
+    display: table-cell;
+  }
+  .table tr > *:nth-child(1),
+  .table tr > *:nth-child(3),
+  .table tr > *:nth-child(5) {
+    display: none;
+  }
+  .table tr > *:nth-child(4) {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .table tr > *:not(:nth-child(0)) {
+    display: table-cell;
+  }
+  .table tr > *:nth-child(1),
+  .table tr > *:nth-child(3) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .table tr > *:not(:nth-child(0)) {
+    display: table-cell;
+  }
+  .table tr > *:nth-child(1) {
+    letter-spacing: .05em;
+  }
+  .table tr > *:nth-child(3) {
+    text-align: center;
+  }
+}
+
+.table tbody {
+  font-family: var(--fontMono);
+}
+.table tbody > *:nth-child(odd) {
+  background-color: hsla(var(--white-hue), 0%, 100%, .65);
+}
+.table tbody > *:nth-child(even) {
+  background-color: hsla(var(--white-hue), 0%, 100%, .45);
+}
+.table td span {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .table td span {
+    display: table-cell;
+  }
+  .table td i {
+    display: none;
+  }
+}

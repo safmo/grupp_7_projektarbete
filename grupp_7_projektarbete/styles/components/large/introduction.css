@@ -1,0 +1,36 @@
+.introduction__body {
+  position: relative;
+}
+
+.introduction__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: hsl(var(--hue-5), 30%, 65%);
+  margin-bottom: -1rem;
+}
+
+.introduction__subtitle {
+  color: hsl(var(--white-hue), 100%, 96%);
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: -1rem;
+}
+
+.introduction__image--large-container {
+  width: fit-content;
+}
+
+.introduction__image--small {
+  font-size: 3rem;
+  padding: 0.5rem 1.25rem;
+  color: hsl(var(--hue-1), 60%, 50%);
+  position: absolute;
+  transition: ease-in-out 0.5s, margin-left 0s, margin-top 0s;
+}
+
+.introduction__image--small:hover {
+  color: var(--hue-3);
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+  transform: scale(1.25);
+}

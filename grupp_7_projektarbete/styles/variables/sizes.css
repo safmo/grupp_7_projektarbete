@@ -1,0 +1,58 @@
+@charset "UTF-8";
+:root {
+  --remSize: 10px;
+  --cols: calc(100% / 12);
+  --col-1: var(--cols);
+  --col-2: calc(var(--cols) * 2);
+  --col-3: calc(var(--cols) * 3);
+  --col-4: calc(var(--cols) * 4);
+  --col-5: calc(var(--cols) * 5);
+  --col-6: calc(var(--cols) * 6);
+  --col-7: calc(var(--cols) * 7);
+  --col-8: calc(var(--cols) * 8);
+  --col-9: calc(var(--cols) * 9);
+  --col-10: calc(var(--cols) * 10);
+  --col-11: calc(var(--cols) * 11);
+  --col-12: 100%;
+  --gridMargin: 15px;
+  --fpc-col-1: calc((100% - (var(--gridMargin) * 11)) / 12);
+  --fpc-col-2: calc((100% - (var(--gridMargin) * 5)) / 6);
+  --fpc-col-3: calc((100% - (var(--gridMargin) * 3)) / 4);
+  --fpc-col-4: calc((100% - (var(--gridMargin) * 2)) / 3);
+  --fpc-col-6: calc((100% - (var(--gridMargin) * 1)) / 2);
+  --fpc-col-12: 100%;
+  --pageSidePadding: 15px;
+}
+@media only screen and (min-width: 480px) {
+  :root {
+    --remSize: 11px;
+    --gridMargin: 6px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  :root {
+    --remSize: 12px;
+    --pageSidePadding: 5vw;
+    --gridMargin: 7px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  :root {
+    --remSize: 13px;
+    --pageSidePadding: 7vw;
+    --gridMargin: 8px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  :root {
+    --remSize: 14px;
+    --pageSidePadding: 10vw;
+    --gridMargin: 9px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  :root {
+    --pageSidePadding: 13.3vw;
+    --gridMargin: 10px;
+  }
+}

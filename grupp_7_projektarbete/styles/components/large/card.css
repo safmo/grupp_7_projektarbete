@@ -1,0 +1,147 @@
+/*---------------------------------------CARD---------------------------------------------*/
+.card {
+  border-radius: 5rem;
+  background-color: hsl(var(--white-hue), 100%, 96%);
+  position: relative;
+}
+
+.card__header {
+  background-image: linear-gradient(
+    to right,
+    hsl(var(--hue-1), 70%, 30%) 6rem,
+    hsl(var(--hue-1), 50%, 50%)
+  );
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.card__heading {
+  padding: 4rem 2rem 0rem 1.5rem;
+  color: hsl(var(--white-hue), 100%, 96%);
+  font-size: 3rem;
+}
+
+.card__subheading {
+  color: hsl(var(--white-hue), 100%, 96%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+  line-height: 1;
+  opacity: 70%;
+}
+
+.card__image {
+  block-size: 6rem;
+  background-color: hsl(var(--hue-1), 50%, 50%);
+  border-radius: 5rem;
+  padding: 1rem;
+  position: absolute;
+  right: -1.5rem;
+  transform: translate(-50%, -60%);
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgb(108, 107, 107, 0.2);
+}
+
+.card__text {
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  font-size: 1.56rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.card__footer {
+  padding: 1.5rem;
+  border-top: 0.25rem solid hsl(var(--hue-1), 50%, 40%);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: hsl(var(--white-hue), 100%, 96%);
+}
+
+.card__button {
+  border-radius: 1rem;
+  position: relative;
+  left: 100%;
+  transform: translate(-100%, 0);
+  text-align: center;
+}
+
+/*------------------CARD---------------------*/
+
+.card .card__button {
+  background-color: hsl(var(--hue-1), 50%, 40%);
+  border-style: solid;
+  border-color: hsl(var(--hue-1), 50%, 40%);
+  border-width: 0.2rem;
+  padding: 1rem;
+  color: hsl(var(--white-hue), 100%, 96%);
+}
+
+.card .card__button:hover {
+  color: hsl(var(--hue-1), 50%, 40%);
+  border-style: solid;
+  border-color: hsl(var(--hue-1), 50%, 40%);
+  border-width: 0.2rem;
+  background-color: hsl(var(--white-hue), 100%, 96%);
+}
+
+/*-----------------------------DANGER-----------------------------*/
+
+.card--danger .card__header {
+  background-image: linear-gradient(
+    to right,
+    hsl(var(--hue-3), 70%, 30%) 6rem,
+    hsl(var(--hue-3), 50%, 50%)
+  );
+}
+
+.card--danger .card__image {
+  background-color: hsl(var(--hue-3), 50%, 50%);
+}
+
+.card--danger .card__footer {
+  border-top: 0.25rem solid hsl(var(--hue-3), 50%, 40%);
+}
+
+.card--danger .card__button {
+  background-color: hsl(var(--hue-3), 50%, 40%);
+  color: hsl(var(--white-hue), 100%, 96%);
+  border-color: hsl(var(--hue-3), 50%, 40%);
+}
+
+.card--danger .card__button:hover {
+  background-color: hsl(var(--white-hue), 100%, 96%);
+  color: hsl(var(--hue-3), 50%, 40%);
+  border-color: hsl(var(--hue-3), 50%, 40%);
+}
+
+/*-----------------------------SUCCESS-----------------------------*/
+
+.card--success .card__header {
+  background-image: linear-gradient(
+    to right,
+    hsl(var(--hue-4), 70%, 30%) 6rem,
+    hsl(var(--hue-4), 50%, 50%)
+  );
+}
+
+.card--success .card__image {
+  background-color: hsl(var(--hue-4), 50%, 50%);
+}
+
+.card--success .card__footer {
+  border-top: 0.25rem solid hsl(var(--hue-4), 50%, 40%);
+}
+
+.card--success .card__button {
+  background-color: hsl(var(--hue-4), 50%, 40%);
+  color: hsl(var(--white-hue), 100%, 96%);
+  border-color: hsl(var(--hue-4), 50%, 40%);
+}
+
+.card--success .card__button:hover {
+  background-color: hsl(var(--white-hue), 100%, 96%);
+  color: hsl(var(--hue-4), 50%, 40%);
+  border-color: hsl(var(--hue-4), 50%, 40%);
+}

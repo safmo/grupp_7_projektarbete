@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VAST - Alexanders Account</title>
+    <meta
+      name="description"
+      content="This text will quite often be displayed beneath the page name in the search results"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./styles/variables/variables.css" />
+    <link rel="stylesheet" href="./styles/base/base.css" />
+    <link rel="stylesheet" href="./styles/components/large/container.css" />
+    <link rel="stylesheet" href="./styles/components/large/navbar.css" />
+    <link rel="stylesheet" href="./styles/components/large/modal.css" />
+    <link rel="stylesheet" href="./styles/components/large/form.css" />
+    <link rel="stylesheet" href="./styles/components/small/headline.css" />
+    <link rel="stylesheet" href="./styles/components/small/button.css" />
+    <link rel="stylesheet" href="./styles/components/small/social-media.css" />
+    <link rel="stylesheet" href="./styles/components/large/info.css" />
+    <link rel="stylesheet" href="./styles/components/large/table.css" />
+    <link rel="stylesheet" href="./styles/components/small/image.css" />
+    <link rel="stylesheet" href="./styles/components/small/progress.css" />
+    <link rel="stylesheet" href="./styles/themes/glassmorphism.css" />
+    <link rel="stylesheet" href="./styles/grid/grid.css" />
+    <link rel="stylesheet" href="./styles/layout/layout.css" />
+    <link rel="stylesheet" href="./styles/pages/account.css" />
+    <link rel="stylesheet" href="./styles/components/large/card.css" />
+    <link rel="stylesheet" href="./styles/components/large/introduction.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__heading page-header__heading--danger">
+        V<span>A</span>ST
+      </h1>
+      <nav class="nav flex frow fbetween fmiddle">
+        <a class="nav__home nav__link nav__home--danger" href="./home.html"
+          >V<span>A</span>ST</a
+        >
+        <a class="nav__hamburger" href="#">&#9776;</a>
+        <div
+          class="nav__menu fcol-12 fcol-md-auto fgrow flex fcol frow-md fbetween-md"
+        >
+          <div class="nav__left flex fcol fcenter frow-md">
+            <a class="nav__link" href="./members.html">Members</a>
+          </div>
+          <div class="nav__right flex fcol fcenter frow-md">
+            <a class="nav__link nav__link--current" href="./account.html"
+              >Account</a
+            >
+            <a class="nav__link" href="./sign_up.html">Sign up</a>
+            <a class="login nav__link" href="#">Log in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="account-bg container">
+        <!-- Kod till unknown-komponenten ska in här -->
+
+        <section class="introduction grid-two">
+          <div class="introduction__header">
+            <h3 class="introduction__title">Alexander Karlsson</h3>
+            <span class="introduction__subtitle">Program Coordinator</span>
+            <!-- <div class="introduction__subtitle">Program Coordinator</div> -->
+          </div>
+          <div class="introduction__body grid-two__item">
+            <div
+              class="introduction__image--large-container grid-two__item--large glass glass--padding-md glass--radius-full"
+            >
+              <picture
+                class="introduction__image--large image__img image--rotate image--circle"
+              >
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/informative/member/000000/webp/000000_256.webp   256w,
+                    ./img/informative/member/000000/webp/000000_512.webp   512w,
+                    ./img/informative/member/000000/webp/000000_750.webp   750w,
+                    ./img/informative/member/000000/webp/000000_860.webp   860w,
+                    ./img/informative/member/000000/webp/000000_1024.webp 1024w
+                  "
+                  sizes="
+                (min-width: 1024px) 35vw,
+                (min-width: 768px) 45vw,
+                (min-width: 512px) 55vw,
+                (min-width: 480px) 75vw,"
+                />
+
+                <source
+                  type="image/jpg"
+                  srcset="
+                    ./img/informative/member/000000/jpg/000000_256.jpg   256w,
+                    ./img/informative/member/000000/jpg/000000_512.jpg   512w,
+                    ./img/informative/member/000000/jpg/000000_750.jpg   750w,
+                    ./img/informative/member/000000/jpg/000000_860.jpg   860w,
+                    ./img/informative/member/000000/jpg/000000_1024.jpg 1024w
+                  "
+                  sizes="
+                (min-width: 1024px) 35vw,
+                (min-width: 768px) 45vw,
+                (min-width: 512px) 55vw,
+                (min-width: 480px) 75vw,"
+                />
+
+                <img
+                  class="introduction__image--large image--circle"
+                  src="
+              ./img/informative/member/000000/jpg/000000_256.jpg"
+                  alt="Alexander Karlsson Profile"
+                />
+              </picture>
+            </div>
+
+            <a
+              class="introduction__image--small glass glass--radius-full grid-two__item--small"
+              href="mailto:alk@du.se"
+              title="Mail to Alexander Karlsson"
+              >&#x2709;</a
+            >
+          </div>
+        </section>
+
+        <!-- Här slutar kod till unknown-komponenten-->
+        <div class="account-info flex fcenter fstart-sm">
+          <section
+            class="info fcol-12 fcol-xs-11 fcol-sm-10 fcol-md-9 fcol-lg-8 fcol-xl-7 fcol-xxl-6"
+            aria-labelledby="presentation"
+          >
+            <h3
+              class="info__heading info__heading--first-letter"
+              id="presentation"
+            >
+              Presentation
+            </h3>
+            <div class="info__main">
+              <p class="info__paragraph">
+                My nickname is Alle. I have two children. My five and a half
+                years old son Elis and my three year old daughter Ida. My parter
+                is a skilled mother, graphic designer, painter, illustrator and
+                a wonderful person.
+              </p>
+              <p class="info__paragraph">
+                I have three sisters. A physician, a psychologist and a
+                criminologist. It's easy to see that the my siblings have found
+                different areas of interests in life. I believe I add to that
+                diversity by being in love with subjects such as quantum
+                mechanics, astronomy, geology, anthropology, DNA and
+                ancient-history.
+              </p>
+              <p class="info__paragraph">
+                If I ever find room for it, I've been known to read "The Wheel
+                of Time".
+              </p>
+            </div>
+            <p class="info__meta info__meta--signature info__meta--right">
+              Alexander Karlsson
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section
+        class="container container--bg-sea-spray container--bg-blur-4 container--bg-success-gradient container--bg-blend-color container--skew-left"
+        aria-labelledby="skills"
+      >
+        <h2
+          class="container__heading container__heading--border-bottom container__heading--padding-right"
+          id="skills"
+        >
+          Skills
+        </h2>
+        <div class="grid-one">
+          <!-- Här är vår flex container för card momentet -->
+          <div class="glass glass--padding-xl glass--radius-sm grid-one__item">
+            <div class="progress"></div>
+          </div>
+          <!-- Kod till card-komponenten ska in här. Kom ihåg att det är tre stycken cards ---------------------------------------------------->
+
+          <article
+            class="card card--danger grid-one__item"
+            aria-labelledby="webDesigner"
+          >
+            <div class="card__header">
+              <h3 id="webDesigner" class="card__heading">Web Designer</h3>
+              <span class="card__subheading">with experience to boot</span>
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./img/informative/icons/globe.svg"
+                />
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique, repellat, rem itaque facilis inventore,
+                commodi
+              </p>
+              <p class="card__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique, repellat, rem itaque facilis inventore,
+                commodi
+              </p>
+            </div>
+            <footer class="card__footer">
+              <button
+                type="button"
+                class="card__button"
+                onclick="window.location.href='#';"
+              >
+                Read more
+              </button>
+            </footer>
+          </article>
+
+          <article
+            class="card card--success grid-one__item"
+            aria-labelledby="retoucher"
+          >
+            <div class="card__header">
+              <h3 id="retoucher" class="card__heading">Retoucher</h3>
+              <span class="card__subheading">with high end custumers</span>
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./img/informative/icons/wand.svg"
+                />
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique, repellat, rem itaque facilis inventore,
+                commodi
+              </p>
+              <p class="card__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique, repellat, rem itaque facilis inventore,
+                commodi
+              </p>
+            </div>
+            <footer class="card__footer">
+              <button
+                type="button"
+                class="card__button"
+                onclick="window.location.href='#';"
+              >
+                Read more
+              </button>
+            </footer>
+          </article>
+
+          <article class="card grid-one__item" aria-labelledby="teacher">
+            <div class="card__header">
+              <h3 id="teacher" class="card__heading">Teacher</h3>
+              <span class="card__subheading">driven by data and people</span>
+              <div class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./img/informative/icons/miscellaneous.svg"
+                />
+              </div>
+            </div>
+            <div class="card__body">
+              <p class="card__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique, repellat, rem itaque facilis inventore,
+                commodi
+              </p>
+              <p class="card__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique, repellat, rem itaque facilis inventore,
+                commodi
+              </p>
+              <!--byta alla card__p till card__text-->
+            </div>
+            <footer class="card__footer">
+              <button
+                type="button"
+                class="card__button"
+                onclick="window.location.href='#';"
+              >
+                Read more
+              </button>
+            </footer>
+          </article>
+        </div>
+        <!-- Kod till card-komponenten ska in här. Kom ihåg att det är tre stycken cards -->
+      </section>
+      <section
+        class="container container--bg-sea-spray container--bg-blur-4 container--bg-danger-gradient container--bg-blend-color container--skew-right"
+        aria-labelledby="courseActivity"
+      >
+        <h2
+          class="container__heading container__heading--right container__heading--border-bottom container__heading--padding-left"
+          id="courseActivity"
+        >
+          Course Activity
+        </h2>
+        <div class="flex fend">
+          <div
+            class="fcol-12 fcol-xl-10 glass glass--padding-xl glass--radius-sm flex"
+          >
+            <table class="fcol-12 table table--hover table--radius">
+              <thead>
+                <tr>
+                  <th>Code</th>
+                  <th>Course</th>
+                  <th>Year</th>
+                  <th>Period</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>GIK298</td>
+                  <td>Data- and Information Management</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>Lecturer</td>
+                </tr>
+                <tr>
+                  <td>GIK297</td>
+                  <td>Responsive Web Design</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>Admin</td>
+                </tr>
+                <tr>
+                  <td>GIK2AM</td>
+                  <td>Visual Identity</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>Lecturer</td>
+                </tr>
+                <tr>
+                  <td>GIK299</td>
+                  <td>Object Oriented Programming</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>Lecturer</td>
+                </tr>
+                <tr>
+                  <td>GIK2LF</td>
+                  <td>Digital Imaging</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>Admin</td>
+                </tr>
+                <tr>
+                  <td>GIK2F8</td>
+                  <td>Dynamic Web Applications</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>Admin</td>
+                </tr>
+                <tr>
+                  <td>GIK2H8</td>
+                  <td>User Centered Design</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>Lecturer</td>
+                </tr>
+                <tr>
+                  <td>GIK2H9</td>
+                  <td>Design of Web Applications</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>Lecturer</td>
+                </tr>
+                <tr>
+                  <td>GIK2JL</td>
+                  <td>Information Design</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>Admin</td>
+                </tr>
+                <tr>
+                  <td>GIK2LG</td>
+                  <td>Collaborative Project</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>Admin</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--   <script src="./js/headerBG.js"></script> -->
+    <script src="./js/progress.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

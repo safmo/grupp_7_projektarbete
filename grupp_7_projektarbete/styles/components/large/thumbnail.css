@@ -1,0 +1,182 @@
+:root {
+  --tn-font-size: 1.5rem;
+}
+@media only screen and (min-width: 480px) {
+  :root {
+    --tn-font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  :root {
+    --tn-font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  :root {
+    --tn-font-size: 1.15rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  :root {
+    --tn-font-size: 1.1rem;
+  }
+}
+
+.thumbnail {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  gap: 0 0;
+  grid-template-areas:
+    "tn-image-container"
+    "tn-header";
+  border: 4px solid hsl(var(--hue-2), 20%, 20%);
+  background-color: hsl(var(--hue-2), 20%, 20%);
+  background-image: radial-gradient(
+    at bottom right,
+    hsl(var(--hue-3), 20%, 20%),
+    hsl(var(--hue-1), 20%, 20%),
+    hsl(var(--hue-2), 20%, 20%)
+  );
+  border-radius: 1rem;
+  font-size: var(--tn-font-size);
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .thumbnail {
+    position: relative;
+    transform-origin: center;
+    display: block;
+    transition: all 150ms ease-in-out;
+  }
+  .thumbnail:hover {
+    z-index: 2;
+    transform: scale(1.08);
+    box-shadow: 4px 4px 8px 4px hsla(var(--hue-1), 100%, 8%, .5),
+      4px 4px 16px 8px hsla(var(--hue-1), 100%, 8%, .25),
+      4px 4px 32px 16px hsla(var(--hue-1), 100%, 8%, .1);
+  }
+}
+@media only screen and (min-aspect-ratio: 2/1) and (min-width: 768px) and (max-width: 992px) {
+  .thumbnail {
+    position: static;
+    transform-origin: initial;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+}
+
+.thumbnail__header {
+  grid-area: tn-header;
+  padding: .4em .4em .2em;
+  background-color: hsl(var(--hue-2), 20%, 20%);
+  font-weight: 400;
+  color: var(--white);
+}
+@media only screen and (min-width: 768px) {
+  .thumbnail__header {
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    z-index: 2;
+    width: calc(100% + 4px);
+    background-color: hsl(var(--hue-2), 20%, 20%);
+    opacity: 0;
+    transition: all 400ms ease-in;
+  }
+  .thumbnail:hover .thumbnail__header {
+    background-color: hsla(var(--hue-2), 20%, 20%, .95);
+    opacity: 1;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/1) and (min-width: 768px) and (max-width: 992px) {
+  .thumbnail__header {
+    position: static;
+    width: 100%;
+    opacity: 1;
+  }
+  .thumbnail:hover .thumbnail__header {
+    background-color: hsl(var(--hue-2), 20%, 20%);
+  }
+}
+
+.thumbnail__title {
+  margin-bottom: .25rem;
+  font-size: 1.3em;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 480px) {
+  .thumbnail__title {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .thumbnail__title {
+    font-size: 1.1em;
+  }
+}
+
+.thumbnail__title--primary {
+  color: hsl(var(--hue-1), 70%, 75%);
+}
+.thumbnail__title--secondary {
+  color: hsl(var(--hue-2), 70%, 75%);
+}
+.thumbnail__title--tertiary {
+  color: hsl(var(--hue-3), 70%, 75%);
+}
+.thumbnail__title--quaternary {
+  color: hsl(var(--hue-4), 70%, 75%);
+}
+.thumbnail__title--quinary {
+  color: hsl(var(--hue-5), 70%, 75%);
+}
+
+.thumbnail__text {
+  font-size: .8em;
+  letter-spacing: .1em;
+}
+
+.thumbnail__text--right {
+  text-align: right;
+}
+
+.thumbnail__text a {
+  font-style: italic;
+  font-weight: 200;
+  color: var(--white);
+}
+.thumbnail__text a:visited {
+  color: var(--white);
+}
+
+.thumbnail__image-container {
+  position: relative;
+  z-index: 1;
+  grid-area: tn-image-container;
+}
+@media only screen and (min-width: 768px) {
+  .thumbnail:hover .thumbnail__image-container {
+    mix-blend-mode: color-dodge;
+    filter: blur(1px);
+  }
+}
+@media only screen and (min-aspect-ratio: 2/1) and (min-width: 768px) and (max-width: 992px) {
+  .thumbnail:hover .thumbnail__image-container {
+    mix-blend-mode: normal;
+    filter: blur(0);
+  }
+}
+
+.thumbnail__link {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: transparent;
+}

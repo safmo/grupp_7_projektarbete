@@ -1,0 +1,20 @@
+.social-media {
+  padding: .5rem;
+}
+.social-media svg {
+  width: 4.8rem;
+  border-radius: .5rem;
+  transition: all 100ms ease-in-out;
+}
+.social-media:hover svg {
+  transform: scale(1.1, 1.1);
+}
+.social-media:active svg {
+  transform: scale(.95, .95);
+}
+.social-media path {
+  fill: hsl(var(--hue-1), 20%, 20%);
+}
+.social-media:hover path {
+  fill: hsl(var(--hue-1), 50%, 40%);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>VAST - Our Members</title>
+  <meta name="description"
+    content="This text will quite often be displayed beneath the page name in the search results" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="stylesheet" href="./styles/variables/variables.css" />
+  <link rel="stylesheet" href="./styles/base/base.css" />
+  <link rel="stylesheet" href="./styles/components/large/container.css" />
+  <link rel="stylesheet" href="./styles/components/large/navbar.css" />
+  <link rel="stylesheet" href="./styles/components/large/modal.css" />
+  <link rel="stylesheet" href="./styles/components/large/form.css" />
+  <link rel="stylesheet" href="./styles/components/large/thumbnail.css" />
+  <link rel="stylesheet" href="./styles/components/small/headline.css" />
+  <link rel="stylesheet" href="./styles/components/small/button.css" />
+  <link rel="stylesheet" href="./styles/components/small/social-media.css" />
+  <link rel="stylesheet" href="./styles/components/small/image.css" />
+  <link rel="stylesheet" href="./styles/grid/grid.css" />
+  <link rel="stylesheet" href="./styles/layout/layout.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__heading page-header__heading--danger">V<span>A</span>ST</h1>
+    <nav class="nav flex frow fbetween fmiddle">
+      <a class="nav__home nav__link nav__home--danger" href="./home.html">V<span>A</span>ST</a>
+      <a class="nav__hamburger" href="#">&#9776;</a>
+      <div class="nav__menu fcol-12 fcol-md-auto fgrow flex fcol frow-md fbetween-md">
+        <div class="nav__left flex fcol fcenter frow-md">
+          <a class="nav__link nav__link--current" href="./members.html">Members</a>
+        </div>
+        <div class="nav__right flex fcol fcenter frow-md">
+          <a class="nav__link" href="./account.html">Account</a>
+          <a class="nav__link" href="./sign_up.html">Sign up</a>
+          <a class="login nav__link" href="#">Log in</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main main--margin">
+    <section class="container">
+      <h2 class="headline headline--danger">Gall<span>ery</span></h2>
+      <!--  grid grid--replica -->
+      <div class="gallery fpc fpc-col-12 fpc-col-xs-6 fpc-col-md-4 fpc-col-lg-3 fpc-col-xl-2">
+        <div class="thumbnail">
+          <header class="thumbnail__header">
+            <h4 class="thumbnail__title thumbnail__title--tertiary">Alexander Karlsson</h4>
+            <p class="thumbnail__text thumbnail__text--right"><a href="mailto:alk@du.se"
+                title="Mail Alexander Karlsson">alk@du.se</a>
+            </p>
+          </header>           
+          <div class="thumbnail__image-container">
+            <picture class="thumbnail__image">
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/informative/member/000000/webp/000000_256.webp 256w,
+                  ./img/informative/member/000000/webp/000000_860.webp 860w"
+                sizes="
+                  (min-width: 1600px) calc(12.29vw - 18px),
+                  (min-width: 1200px) calc(20vw - 15px),
+                  (min-width: 1000px) calc(28.89vw - 16px),
+                  (min-width: 780px) 45vw,
+                  (min-width: 480px) calc(50vw - 26px),
+                  calc(100vw - 38px)" />
+              <source 
+                type="image/jpg"
+                srcset="
+                  ./img/informative/member/000000/jpg/000000_256.jpg 256w,
+                  ./img/informative/member/000000/jpg/000000_860.jpg 860w"
+                sizes="
+                  (min-width: 1600px) calc(12.29vw - 18px),
+                  (min-width: 1200px) calc(20vw - 15px),
+                  (min-width: 1000px) calc(28.89vw - 16px),
+                  (min-width: 780px) 45vw,
+                  (min-width: 480px) calc(50vw - 26px),
+                  calc(100vw - 38px)" />
+              <img 
+                src="./img/informative/member/000000/jpg/000000_860.jpg"
+                width="860" height="860"
+                alt="Image of Alexander Karlsson">
+            </picture>
+            <a class="thumbnail__link" href="./account.html" title="Link to Alexander Karlssons profile">Go to profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--   <script src="./js/headerBG.js"></script> -->
+  <script src="./js/member.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

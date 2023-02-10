@@ -1,0 +1,178 @@
+
+
+:root {
+  --screen-size: 100vw;
+}
+
+.grid {
+  display: grid;
+  grid-gap: var(--gridMargin);
+  width: 100%;
+}
+.grid--replica {
+  grid-template-columns: repeat(1, 1fr);
+}
+@media only screen and (min-width: 480px) {
+  .grid--replica {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .grid--replica {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .grid--replica {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .grid--replica {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.grid--example {
+  grid-template-columns: repeat(6, calc(((var(--screen-size) - (var(--pageSidePadding) * 2 + var(--gridMargin) * 6)) / 6)));
+  grid-template-rows: repeat(6, calc(((var(--screen-size) - (var(--pageSidePadding) * 2 + var(--gridMargin) * 6)) / 6)));
+  grid-template-areas:
+    "div-17 div-17 div-1 div-4 div-9 div-13"
+    "div-17 div-17 div-1 div-5 div-10 div-14"
+    "div-17 div-17 div-2 div-6 div-11 div-15"
+    "div-17 div-17 div-2 div-7 div-7 div-16"
+    "div-17 div-17 div-3 div-7 div-7 div-16"
+    "div-17 div-17 div-3 div-8 div-12 div-16";
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  .grid--example {
+    grid-template-columns: repeat(5, calc((var(--screen-size) - (var(--pageSidePadding) * 2 + var(--gridMargin) * 5)) / 5));
+    grid-template-rows: repeat(5, calc((var(--screen-size) - (var(--pageSidePadding) * 2 + var(--gridMargin) * 5)) / 5));
+    grid-template-areas:
+      "div-1 div-2 div-3 div-4 div-5"
+      "div-6 div-17 div-17 div-17 div-7"
+      "div-8 div-17 div-17 div-17 div-9"
+      "div-10 div-17 div-17 div-17 div-11"
+      "div-12 div-13 div-14 div-15 div-16";
+  }
+}
+
+.grid--example > div {
+  position: relative;
+  z-index: 2;
+}
+.grid--example > div:nth-child(1) {
+  grid-area: div-1;
+}
+.grid--example > div:nth-child(2) {
+  grid-area: div-2;
+}
+.grid--example > div:nth-child(3) {
+  grid-area: div-3;
+}
+.grid--example > div:nth-child(4) {
+  grid-area: div-4;
+}
+.grid--example > div:nth-child(5) {
+  grid-area: div-5;
+}
+.grid--example > div:nth-child(6) {
+  grid-area: div-6;
+}
+.grid--example > div:nth-child(7) {
+  grid-area: div-7;
+}
+.grid--example > div:nth-child(8) {
+  grid-area: div-8;
+}
+.grid--example > div:nth-child(9) {
+  grid-area: div-9;
+}
+.grid--example > div:nth-child(10) {
+  grid-area: div-10;
+}
+.grid--example > div:nth-child(11) {
+  grid-area: div-11;
+}
+.grid--example > div:nth-child(12) {
+  grid-area: div-12;
+}
+.grid--example > div:nth-child(13) {
+  grid-area: div-13;
+}
+.grid--example > div:nth-child(14) {
+  grid-area: div-14;
+}
+.grid--example > div:nth-child(15) {
+  grid-area: div-15;
+}
+.grid--example > div:nth-child(16) {
+  grid-area: div-16;
+}
+.grid--example > div:nth-child(17) {
+  grid-area: div-17;
+}
+
+/* Enbart design */
+.grid--example > div {
+  border-radius: 1rem;
+}
+.grid--example > div:nth-child(1n + 1) {
+  background-color: hsl(var(--hue-1), 80%, 90%);
+}
+.grid--example > div:nth-child(1n + 6) {
+  background-color: hsl(var(--hue-1), 70%, 75%);
+}
+.grid--example > div:nth-child(1n + 8) {
+  background-color: hsl(var(--hue-1), 60%, 60%);
+}
+.grid--example > div:nth-child(1n + 10) {
+  background-color: hsl(var(--hue-1), 50%, 40%);
+}
+.grid--example > div:nth-child(1n + 12) {
+  background-color: hsl(var(--hue-1), 39%, 20%);
+}
+.grid--example > div:nth-child(5n + 1):hover {
+  background-color: hsl(var(--hue-1), 60%, 60%);
+}
+.grid--example > div:nth-child(5n + 2):hover {
+  background-color: hsl(var(--hue-2), 60%, 60%);
+}
+.grid--example > div:nth-child(5n + 3):hover {
+  background-color: hsl(var(--hue-3), 60%, 60%);
+}
+.grid--example > div:nth-child(5n + 4):hover {
+  background-color: hsl(var(--hue-4), 60%, 60%);
+}
+.grid--example > div:nth-child(5n + 5):hover {
+  background-color: hsl(var(--hue-5), 60%, 60%);
+}
+.grid--example > div:nth-child(17) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--hue-1), 100%, 8%);
+  color: hsl(var(--hue-3), 60%, 60%);
+  font-size: 5rem;
+  z-index: 1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  -webkit-text-orientation: upright;
+  text-transform: uppercase;
+  letter-spacing: -10px;
+}
+.grid--example > div:nth-child(17):hover {
+  background-color: hsl(var(--hue-1), 100%, 8%);
+  text-shadow: 0 0 10px hsl(var(--hue-3), 60%, 60%),
+    0 0 20px hsl(var(--hue-3), 60%, 60%), 0 0 30px hsl(var(--hue-3), 60%, 60%);
+  transform: scale(0.99);
+}
+@media only screen and (min-width: 768px) {
+  .grid--example > div:nth-child(17) {
+    writing-mode: horizontal-tb;
+    -webkit-text-orientation: mixed;
+    text-transform: initial;
+    letter-spacing: initial;
+  }
+}
